@@ -2,11 +2,13 @@ body {
     background-color: rgb(135, 10, 35);
     font-family: 'Times New Roman', Times, serif;
 }
+
 h1 {
     text-align: center;
     color: ivory;
     font-size: 40px;
 }
+
 h2 {
     color: ivory;
 }
@@ -17,7 +19,7 @@ h2 {
 }
 
 .project {
-    width: 25%; /* Adjusted width */
+    width: 25%; /* Adjusted width for each project */
     margin: 10px;
     padding: 20px 10px;
     background: white;
@@ -30,27 +32,39 @@ h2 {
 
 .project a {
     text-decoration: none; /* Remove underline from links */
-    color: rgb(135, 10, 35); /* Keep the link color blue */
+    color: rgb(135, 10, 35); /* Link color */
     margin: 10px 0; /* Add space around links */
 }
 
 .project p {
-    font-size: 0.9em; /* Adjust as needed */
-    line-height: 1.4; /* Maintain line height for readability */
-    text-align: center; /* Center the text within the project section */
-    padding: 0 15px; /* Increase padding for better fit */
-    color: rgb(135, 10, 35); /* Change text color */
-    max-width: 90%; /* Set a maximum width to prevent overflow */
-    margin: 0 auto; /* Center the paragraph */
+    font-size: 0.9em; /* Adjust text size */
+    line-height: 1.4; /* Line height for readability */
+    text-align: center; /* Center text */
+    padding: 0 15px; /* Padding around text */
+    color: rgb(135, 10, 35); /* Text color */
+    max-width: 90%; /* Max width to prevent overflow */
+    margin: 0 auto; /* Center paragraph */
 }
 
 /* Ensures images are square and responsive */
 .oval-image {
-    max-width: 90%; /* Reduce the max width to make the image smaller */
+    max-width: 90%; /* Reduce max width for better fit */
     height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Slight rounding for a softer look, adjust as needed */
-    object-fit: contain; /* Ensures the entire image fits within the container */
-    display: block; /* Ensures the image is treated as a block element for styling */
-    margin: 0 auto; /* Centers the image */
-    padding: 10px; /* Adds padding around the image */
+    border-radius: 10px; /* Rounding edges */
+    object-fit: contain; /* Ensure entire image fits in the container */
+    display: block; /* Treat image as block element */
+    margin: 0 auto; /* Center image */
+    padding: 10px; /* Add padding around image */
+}
+
+/* Specific styling for the new Sketches Assignment */
+.project.sketches {
+    background-color: lightgray; /* Different background for sketches section */
+    border: 2px solid rgb(135, 10, 35); /* Add a border for emphasis */
+    border-radius: 10px; /* Rounded corners for a distinct look */
+}
+
+.project.sketches p {
+    font-weight: bold; /* Bold text for emphasis */
+    color: rgb(80, 5, 20); /* Slightly darker color for contrast */
 }
