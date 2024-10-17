@@ -68,3 +68,8 @@ h2 {
     font-weight: bold; /* Bold text for emphasis */
     color: rgb(80, 5, 20); /* Slightly darker color for contrast */
 }
+
+/* Adjust position for the prototype sketches image */
+.project img[alt="Prototype Sketches"] {
+  margin-top: -25px; /* Move image up slightly */
+}
