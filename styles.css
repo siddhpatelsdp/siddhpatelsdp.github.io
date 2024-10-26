@@ -5,21 +5,75 @@ body {
 
 h1 {
     text-align: center;
-    color: ivory;
+    color: white;
     font-size: 40px;
 }
 
 h2 {
-    color: ivory;
+    color: white;
 }
 
+/* Mission Statement Styling */
+.mission-statement {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    margin: 20px 100px;
+    border-radius: 15px;
+}
+
+.mission-statement p {
+    color: rgb(135, 10, 35);
+    font-size: 1.1em;
+}
+
+/* About Me Styling */
+.about {
+    display: flex; /* Flexbox layout for image and text */
+    margin-right: 100px;
+    margin-left: 100px;
+    justify-content: flex-start; /* Align items to the start */
+    align-items: center; /* Center align items vertically */
+}
+
+.about img {
+    width: 150px;
+    height: 200px;
+    border-radius: 25%;
+    border: 2px solid rgb(135, 10, 35);
+    margin-right: 20px; /* Space between image and text */
+}
+
+/* About Text Styling */
+.about-text {
+    padding: 20px; /* Add padding for spacing */
+    background-color: white; /* Background color for the about text */
+    border-radius: 15px; /* Same border-radius as the mission statement */
+    text-align: center; /* Center align the text within the block */
+    flex-grow: 1; /* Allow it to take available space */
+}
+
+.about-text p {
+    line-height: 125%;
+    color: rgb(135, 10, 35); /* Text color to match the mission statement */
+}
+
+/* Skills Styling */
+.skills {
+    text-align: center;
+    color: white;
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+/* Projects Styling */
 .projects {
     display: flex;
     flex-wrap: wrap;
 }
 
 .project {
-    width: 25%; /* Adjusted width for each project */
+    width: 25%;
     margin: 10px;
     padding: 20px 10px;
     background: white;
@@ -31,45 +85,51 @@ h2 {
 }
 
 .project a {
-    text-decoration: none; /* Remove underline from links */
-    color: rgb(135, 10, 35); /* Link color */
-    margin: 10px 0; /* Add space around links */
+    text-decoration: none;
+    color: rgb(135, 10, 35);
+    margin: 10px 0;
 }
 
 .project p {
-    font-size: 0.9em; /* Adjust text size */
-    line-height: 1.4; /* Line height for readability */
-    text-align: center; /* Center text */
-    padding: 0 15px; /* Padding around text */
-    color: rgb(135, 10, 35); /* Text color */
-    max-width: 90%; /* Max width to prevent overflow */
-    margin: 0 auto; /* Center paragraph */
+    font-size: 0.9em;
+    line-height: 1.4;
+    text-align: center;
+    padding: 0 15px;
+    color: rgb(135, 10, 35);
+    max-width: 90%;
+    margin: 0 auto;
 }
 
-/* Ensures images are square and responsive */
+/* Image Styling */
 .oval-image {
-    max-width: 90%; /* Reduce max width for better fit */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Rounding edges */
-    object-fit: contain; /* Ensure entire image fits in the container */
-    display: block; /* Treat image as block element */
-    margin: 0 auto; /* Center image */
-    padding: 10px; /* Add padding around image */
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
 }
 
-/* Specific styling for the new Sketches Assignment */
-.project.sketches {
-    background-color: lightgray; /* Different background for sketches section */
-    border: 2px solid rgb(135, 10, 35); /* Add a border for emphasis */
-    border-radius: 10px; /* Rounded corners for a distinct look */
+/* Contact Styling */
+.contact {
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+/* Contact Links Styling */
+.contact-links {
+    text-align: center; /* Center the links */
+    padding: 5px; /* Tighten up the padding for closer edges */
+    background-color: white; /* Background color for the contact links */
+    border-radius: 15px; /* Curved corners */
+    margin: 10px 100px; /* Outer margin for the box */
 }
 
-.project.sketches p {
-    font-weight: bold; /* Bold text for emphasis */
-    color: rgb(80, 5, 20); /* Slightly darker color for contrast */
-}
-
-/* Adjust position for the prototype sketches image */
-.project img[alt="Prototype Sketches"] {
-  margin-top: -25px; /* Move image up slightly */
+.contact-links a {
+    text-decoration: none; /* Remove underline from links */
+    color: rgb(135, 10, 35); /* Text color for links */
+    margin: 0 10px; /* Reduced spacing between links for closer appearance */
+    font-size: 1.2em; /* Increase font size for the links */
+    display: inline-block; /* Ensure links are inline-block for better spacing control */
 }
