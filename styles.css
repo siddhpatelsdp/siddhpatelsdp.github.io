@@ -60,20 +60,46 @@ h2 {
 
 /* Skills Styling */
 .skills {
-    text-align: center;
+    text-align: center; /* Align all content to the left */
     color: white;
     font-size: 1.2em;
-    margin: 20px 0;
+    margin: 20px 100px;
+}
+
+/* New skills section with categories */
+.skills b {
+    font-weight: normal; /* Change from bold to normal */
+    color: rgb(135, 10, 35); /* Retain the red color */
+}
+
+/* Optional: Reset the font size and color of the skills section if needed */
+.skills p {
+    font-weight: normal; /* Ensure no bold text */
+}
+
+/* Optional: Add background and padding to the skills section */
+.skills {
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+/* Specific styling for the Resume link */
+.skills p:last-child {
+    text-align: center; /* Keep "Resume" centered */
+    margin-top: 20px; /* Adds space above the resume link */
 }
 
 /* Projects Styling */
 .projects {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center; /* This centers the projects horizontally */
+    gap: 20px; /* Optional: Adds space between the projects */
 }
 
 .project {
-    width: 25%;
+    width: 25%; /* Adjusts the width of each project */
     margin: 10px;
     padding: 20px 10px;
     background: white;
