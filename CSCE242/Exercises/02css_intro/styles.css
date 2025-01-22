@@ -1,0 +1,51 @@
+/* Structure */
+body {
+    background: skyblue;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Navigation */
+a {
+    text-decoration: none;
+    background: #bec169;
+    color: black;
+    padding: 4px;
+    border-radius: 3px;
+}
+
+a:hover {
+    background: #f5a679;
+}
+
+/* Images */
+img {
+    border: 5px solid #d96b43;
+    border-radius: 5px;
+}
+/* Tables */
+table {
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #565656;
+    padding: 4px;
+}
+
+th {
+    background: #F29057
+}
+
+td {
+    background: #f3f3f3;
+}
+/* Typography */
+h1 {
+    color: cornflowerblue;
+    font-style: italic;
+}
+
+h2 {
+    color: green;
+}

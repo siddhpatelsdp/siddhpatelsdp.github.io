@@ -1,0 +1,108 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif; /* Changed font */
+    color: #333; /* Dark gray text for readability */
+    background-image: url('./Images/trading-bg.jpg'); /* Subtle background image */
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+/* Content Wrapper */
+#content {
+    background-color: rgba(255, 255, 255, 0.9); /* White with slight transparency */
+    border: 2px solid #ccc; /* Light gray border */
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 960px; /* Restrict width for better readability */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Navigation Styles */
+#main-nav {
+    background-color: #4CAF50; /* Green background */
+    padding: 10px;
+    text-align: center;
+}
+
+#main-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#main-nav li {
+    display: inline; /* Inline navigation items */
+    margin: 0 10px;
+}
+
+#main-nav a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* White text */
+    padding: 5px 10px;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+#main-nav a:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+}
+
+/* Heading Styles */
+h1 {
+    color: #2C3E50; /* Dark blue for main header */
+    text-align: center;
+}
+
+h2 {
+    color: #34495E; /* Slightly lighter blue for subheaders */
+    margin-top: 20px;
+}
+
+/* Paragraph Styles */
+p {
+    line-height: 1.6; /* Improved readability */
+    margin-bottom: 20px;
+}
+
+/* Image Styles */
+.images {
+    text-align: center; /* Center images */
+    margin-bottom: 20px;
+}
+
+.images img {
+    margin: 10px; /* Space between images */
+    border-radius: 8px; /* Rounded corners */
+    transition: transform 0.3s; /* Smooth zoom effect on hover */
+}
+
+.images img:hover {
+    transform: scale(1.1); /* Zoom in on hover */
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd; /* Light gray borders */
+    text-align: center;
+    padding: 10px;
+}
+
+table th {
+    background-color: #4CAF50; /* Green background for headers */
+    color: white; /* White text for headers */
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light gray for alternating rows */
+}
+
+table tr:hover {
+    background-color: #f1f1f1; /* Highlight row on hover */
+}
