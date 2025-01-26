@@ -1,0 +1,141 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    text-align: center;
+    background-color: #80e8c0;
+    color: rgb(0, 0, 0);
+    padding: 1rem;
+}
+
+/* Navigation */
+nav ul {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav ul li {
+    padding: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.big-ideas {
+    padding: 1rem;
+    background-color: #ffffff;
+}
+
+.big-ideas h2 {
+    text-align: left;
+}
+
+.idea {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: #c4e5d8;
+}
+
+.idea img {
+    margin-left: 1rem;
+}
+
+.extra-content {
+    padding: 1rem;
+    background-color: #ffffff;
+}
+
+.columns {
+    display: flex;
+    gap: 1rem;
+}
+
+.left-section {
+    flex: 2;
+}
+
+.left-section .row {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.block {
+    flex: 1;
+    padding: 1rem;
+    background-color: #c4e5d8;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.links-column {
+    flex: 1;
+    background-color: #e4e4e4;
+    padding: 1rem;
+    text-align: left;
+}
+
+.links-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.links-column ul li {
+    margin-bottom: 0.5rem;
+}
+
+.right-section {
+    flex: 3;
+}
+
+.right-section .row {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.right-section .block {
+    flex: 1;
+    padding: 1rem;
+    background-color: #c4e5d8;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media (max-width: 768px) {
+    .columns {
+        flex-direction: column;
+    }
+
+    .left-section,
+    .right-section,
+    .links-column {
+        width: 100%;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+}

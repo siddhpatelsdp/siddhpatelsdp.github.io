@@ -7,53 +7,95 @@ body {
     color: #333;
 }
 
-/* Wrapper for main content */
-#wrapper {
-    max-width: 900px;
-    margin: 20px auto;
-    background: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+/* Header Styles */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
-/* Heading Styles */
 h1 {
     font-size: 2.5em;
     color: #1e90ff;
     text-align: center;
-    margin-bottom: 10px;
 }
 
 h2 {
-    font-size: 1.5em;
-    color: #4682b4;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+h2:first-child {
+    text-align: left;
+    width: 100%;
+    padding-left: 20px;
     margin-bottom: 10px;
-}
-
-/* Paragraphs */
-p {
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
-/* Assignments List */
-#assignments {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-#assignments li {
-    margin-bottom: 10px;
-}
-
-#assignments a {
-    text-decoration: none;
     color: #1e90ff;
-    font-weight: bold;
 }
 
-#assignments a:hover {
+/* Assignments Header */
+#assignments h2 {
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #1e90ff;
+}
+
+/* Assignments Section */
+#assignments {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.assignment {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.assignment h3 {
+    font-size: 1.3em;
     color: #4682b4;
+    margin-bottom: 10px;
+}
+
+.assignment img {
+    border-radius: 5px;
+}
+
+.assignment p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Remove underline from links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
     text-decoration: underline;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    #assignments {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .assignment {
+        width: 80%;
+        margin-bottom: 20px;
+    }
 }
