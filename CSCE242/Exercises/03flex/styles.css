@@ -1,0 +1,103 @@
+/* Structure */
+body {
+    background:#CDECEF;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#content {
+    background:white;
+    width:70%;
+    margin:auto; /* center */
+    border-radius:5px;
+    box-shadow: 10px 10px lightblue;
+}
+
+header, footer {
+    background:#2B91AD;
+    color:white;
+}
+
+main {
+    padding:5px;
+}
+
+.idea {
+    padding:5px;
+}
+
+.idea:nth-child( even ) {
+    background:#CDECEF;
+}
+
+.idea-img {
+    margin-top:20px;
+    padding:5px;
+    text-align: center;
+}
+
+.gallery {
+    background:#FFB58A;
+}
+
+.links {
+    background:#CDECEF;
+}
+
+/* Navigation */
+#main-nav ul {
+    padding-left:0;
+}
+
+#main-nav li {
+    list-style-type: none;  /* remove the bullets */
+    background:#FFB58A;
+    text-align: center;
+    border-bottom:1px solid white;
+}
+
+#main-nav a {
+    color:white;
+    text-decoration: none;  /* remove the underlines */
+    border-bottom:1px solid transparent;
+}
+
+#main-nav a:hover {
+    color:crimson;
+    border-bottom:1px solid white;
+}
+
+/* Typography */
+header h1 {
+    text-align: center;
+}
+
+footer p {
+    text-align:center;
+}
+
+/* Larger screens */
+@media only screen and (min-width: 768px) { 
+    .columns {
+        display:flex;
+    }
+
+    #main-nav li {
+        flex:1;
+    }
+
+    #main-nav li:not(:last-child) {
+        border-right: 1px solid white;
+    }
+
+    .one {
+        flex:1;
+    }
+
+    .two {
+        flex:2;
+    }
+
+    .three {
+        flex:3;
+    }
+}
