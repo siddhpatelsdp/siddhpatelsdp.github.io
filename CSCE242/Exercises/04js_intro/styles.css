@@ -1,6 +1,9 @@
 /* Structure */
+:root {
+    --main-background-color:#CDECEF;
+}
 body {
-    background:#CDECEF;
+    background:var(--main-background-color);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -81,13 +84,25 @@ main {
 }
 
 @keyframes fun {
-    0% {background-color: red;}
+    0% {
+        background-color: red;
+        top:0;
+        left:0;
+    }
     20% {background-color: orange;}
     40% {background-color: yellow;}
-    60% {background-color:aqua;}
+    60% {
+        background-color:aqua;
+        left:100px;
+        top:200px;
+    }
     70% {background-color: green;}
     80% {background-color: indigo;}
-    100% {background-color: violet;}
+    100% {
+        background-color: violet;
+        top:200px;
+        left:0;
+    }
   }
 
 /* Playing with positioning */
