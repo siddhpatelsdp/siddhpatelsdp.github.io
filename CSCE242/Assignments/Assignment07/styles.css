@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+header h2 {
+    font-size: 1.5rem;
+    margin: 0;
+    color: #666;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 1200px;
+    min-height: 500px;
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+    background-color: #e3e3ff;
+    border-radius: 10px;
+    text-align: center;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.column input[type="color"] {
+    width: 100px;
+    height: 50px;
+    display: block;
+    margin: 20px auto 0 auto;
+}
+
+.star {
+    font-size: 200px;
+}
+
+.image-container {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #000;
+    margin-top: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+#helloContainer div {
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
