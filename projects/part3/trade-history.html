@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trade Tracker - Trade History</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://fakeimg.pl/100x50/" alt="Logo">
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="add-trade.html">Add Trade</a></li>
+                <li><a href="trade-history.html" class="active">Trade History</a></li>
+                <li><a href="insights.html">Insights</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="dropdown-container">
+                <div class="dropdown">
+                    <select onchange="location = this.value;">
+                        <option value="index.html">Home</option>
+                        <option value="add-trade.html">Add Trade</option>
+                        <option value="trade-history.html" selected>Trade History</option>
+                        <option value="insights.html">Insights</option>
+                        <option value="contact.html">Contact Us</option>
+                    </select>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+            </div>
+            <div class="login-icon">
+                <img src="https://fakeimg.pl/30x30/" alt="Login Icon">
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1>Your Trade History.</h1>
+        <p>View, filter, and analyze your past trades to refine your strategy.</p>
+
+        <div class="filters">
+            <label for="instrument-name">Enter Instrument Name:</label>
+            <input type="text" id="instrument-name" name="instrument-name" placeholder="e.g., NAS100">
+
+            <label for="date-range">Enter Date Range:</label>
+            <input type="date" id="start-date" name="start-date">
+            <span>to</span>
+            <input type="date" id="end-date" name="end-date">
+
+            <label for="filter-trades">Filter trades:</label>
+            <select id="filter-trades">
+                <option value="all">All Trades</option>
+                <option value="winning">Winning Trades Only</option>
+                <option value="losing">Losing Trades Only</option>
+            </select>
+
+            <label for="sort-trades">Sort trades by:</label>
+            <select id="sort-trades">
+                <option value="most-recent">Most Recent Trades</option>
+                <option value="oldest-first">Oldest First</option>
+                <option value="highest-profit">Highest Profit</option>
+                <option value="biggest-loss">Biggest Loss</option>
+                <option value="alphabetical">Alphabetical (Ticker Symbol)</option>
+            </select>
+        </div>
+
+        <table class="trade-table">
+            <thead>
+                <tr>
+                    <th>Instrument</th>
+                    <th>Entry Price</th>
+                    <th>Exit Price</th>
+                    <th>Date</th>
+                    <th>Profit/Loss</th>
+                    <th>Notes</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>NAS100</td>
+                    <td>15,320.50</td>
+                    <td>15,400.75</td>
+                    <td>02/02/25</td>
+                    <td>+805.00</td>
+                    <td>NY session breakout</td>
+                    <td><button class="plus-icon">+</button></td>
+                </tr>
+                <tr>
+                    <td>SPX500</td>
+                    <td>4,950.25</td>
+                    <td>4,960.50</td>
+                    <td>02/03/25</td>
+                    <td>+102.50</td>
+                    <td>Scalped FOMC move</td>
+                    <td><button class="plus-icon">+</button></td>
+                </tr>
+                <tr>
+                    <td>EUR/USD</td>
+                    <td>1.0825</td>
+                    <td>1.0850</td>
+                    <td>02/04/25</td>
+                    <td>+250.00</td>
+                    <td>London session reversal</td>
+                    <td><button class="plus-icon">+</button></td>
+                </tr>
+                <tr>
+                    <td>GBP/USD</td>
+                    <td>1.2720</td>
+                    <td>1.2685</td>
+                    <td>02/05/25</td>
+                    <td>-350.00</td>
+                    <td>Took a loss on CPI news</td>
+                    <td><button class="plus-icon">+</button></td>
+                </tr>
+                <tr>
+                    <td>XAU/USD</td>
+                    <td>2,030.00</td>
+                    <td>2,015.50</td>
+                    <td>02/06/25</td>
+                    <td>-450.00</td>
+                    <td>Gold short during NY session</td>
+                    <td><button class="plus-icon">+</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="pagination">
+            <button class="prev-button">Previous</button>
+            <span class="page-info">1/10</span>
+            <button class="next-button">Next</button>
+        </div>
+
+        <section class="live-statistics">
+            <h2>Live Statistics</h2>
+            <table class="stats-table">
+                <tr>
+                    <td>Total Trades</td>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <td>Win Rate</td>
+                    <td>65%</td>
+                </tr>
+                <tr>
+                    <td>Best Trade</td>
+                    <td>+805.00</td>
+                </tr>
+                <tr>
+                    <td>Worst Trade</td>
+                    <td>-450.00</td>
+                </tr>
+            </table>
+            <button class="export-button">Export Trade History (CSV)</button>
+        </section>
+    </main>
+    <footer>
+        <h3>Quick Links</h3>
+        <nav class="quick-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="add-trade.html">Add Trade</a></li>
+                <li><a href="trade-history.html" class="active">Trade History</a></li>
+                <li><a href="insights.html">Insights</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <p>© 2025 TradeTracker. All rights reserved.</p>
+    </footer>
+</body>
+</html>

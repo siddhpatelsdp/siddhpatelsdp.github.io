@@ -19,13 +19,25 @@
                 <li><a href="insights.html">Insights</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
+            <div class="dropdown-container">
+                <div class="dropdown">
+                    <select onchange="location = this.value;">
+                        <option value="index.html">Home</option>
+                        <option value="add-trade.html">Add Trade</option>
+                        <option value="trade-history.html">Trade History</option>
+                        <option value="insights.html">Insights</option>
+                        <option value="contact.html">Contact Us</option>
+                    </select>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+            </div>
             <div class="login-icon">
                 <img src="https://fakeimg.pl/30x30/" alt="Login Icon">
             </div>
         </nav>
     </header>
     <main>
-        <h1>Track, Analyze, and Improve Your Trades</h1>
+        <h1>Track, Analyze, and Improve Your Trades.</h1>
         <p>A simple yet powerful tool for day traders to log and review their trades.</p>
         <div class="visual-placeholder">
             <img src="https://fakeimg.pl/800x400/" alt="Visual Element">
@@ -48,6 +60,20 @@
                     <td>Download your full trade history as a CSV file for offline analysis. Easily share your trades or import them into external tools for deeper financial tracking.</td>
                 </tr>
             </table>
+
+            <!-- Mobile feature highlights -->
+            <div class="feature-highlight-item">
+                <h3>Log Your Trades Easily</h3>
+                <p>Effortlessly input your trade details, including ticker symbol, entry and exit prices, trade date, and notes. Keep your trading journal organized and accessible anytime.</p>
+            </div>
+            <div class="feature-highlight-item">
+                <h3>Analyze Performance</h3>
+                <p>Visualize your trading history with interactive charts and key metrics. Track your profit/loss trends, win rate, and performance insights to refine your strategies.</p>
+            </div>
+            <div class="feature-highlight-item">
+                <h3>Export & Share</h3>
+                <p>Download your full trade history as a CSV file for offline analysis. Easily share your trades or import them into external tools for deeper financial tracking.</p>
+            </div>
         </section>
     </main>
     <footer>
