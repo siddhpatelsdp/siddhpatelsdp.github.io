@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #c4c4c4;
+}
+
+h1, h2 {
+    margin: 10px 0;
+}
+
+.menu-bar {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.large-menu {
+    display: none;
+}
+
+.small-menu {
+    display: block;
+}
+
+.menu-items {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-items li {
+    margin-top: 10px;
+    padding: 0;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.menu-items li:not(:last-child)::after {
+    content: '|';
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #999;
+}
+
+.menu-items li:hover {
+    cursor: pointer;
+}
+
+.content {
+    display: none;
+    padding: 20px;
+    background-color: #e1e1e1;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    text-align: center;
+    position: relative;
+}
+
+#illustration img {
+    max-width: 50%;
+    max-height: 50%;
+    height: auto;
+    width: auto;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.buttons button {
+    margin-right: 10px;
+}
+
+.heart-unicode {
+    font-size: 150px;
+    color: white;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 0;
+    align-self: flex-start;
+}
+
+label, #transportation {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .large-menu {
+        display: none;
+    }
+
+    .small-menu {
+        display: block;
+    }
+    
+    .toggle-menu {
+        position: relative;
+    }
+    
+    .arrow {
+        cursor: pointer;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+    
+    .menu-items {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-items li {
+        display: block;
+        width: auto;
+        text-align: center;
+    }
+
+    .toggle-menu .menu-items li:not(:last-child)::after {
+        content: none;
+    }
+}
+
+@media (min-width: 769px) {
+    .large-menu {
+        display: block;
+    }
+
+    .small-menu {
+        display: none;
+    }
+}
