@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trade Tracker - Add Trade</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../Images/TRADE TRACKER LOGO.jpg" alt="Logo">
+            </div>
+            <div class="large-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="add-trade.html">Add Trade</a></li>
+                    <li><a href="trade-history.html">Trade History</a></li>
+                    <li><a href="insights.html">Insights</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="menu-bar small-menu">
+                <div class="toggle-menu">
+                    <span class="arrow" onclick="toggleMenu()">&#9660;</span>
+                    <ul class="menu-items">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="add-trade.html">Add Trade</a></li>
+                        <li><a href="trade-history.html">Trade History</a></li>
+                        <li><a href="insights.html">Insights</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="login-icon">
+                <img src="../Images/LOGIN ICON.jpg" alt="Login Icon">
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1>Log a New Trade.</h1>
+        <p>Enter your trade details below and track your performance over time.</p>
+        <form class="trade-form">
+            <label for="instrument">Instrument:</label>
+            <input type="text" id="instrument" name="instrument" required>
+            
+            <label for="entry-price">Entry Price:</label>
+            <input type="number" step="0.01" id="entry-price" name="entry-price" required>
+            
+            <label for="exit-price">Exit Price:</label>
+            <input type="number" step="0.01" id="exit-price" name="exit-price" required>
+            
+            <label for="trade-date">Trade Date:</label>
+            <input type="date" id="trade-date" name="trade-date" required>
+            
+            <label for="profit-loss">Profit/Loss:</label>
+            <input type="number" step="0.01" id="profit-loss" name="profit-loss" required>
+            
+            <label for="notes">Notes:</label>
+            <textarea id="notes" name="notes"></textarea>
+            
+            <div class="form-buttons">
+                <button type="submit">Submit Trade</button>
+                <button type="reset">Reset Form</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <h3>Quick Links</h3>
+        <nav class="quick-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="add-trade.html">Add Trade</a></li>
+                <li><a href="trade-history.html">Trade History</a></li>
+                <li><a href="insights.html">Insights</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <p>© 2025 TradeTracker. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
