@@ -146,6 +146,11 @@ main p {
     line-height: 1.75;
 }
 
+.feature-highlights th {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
 footer {
     background-color: var(--primary-color);
     color: white;
