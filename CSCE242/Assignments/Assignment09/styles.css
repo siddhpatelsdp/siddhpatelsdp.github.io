@@ -1,0 +1,65 @@
+body {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding-top: 20px;
+}
+
+h1 {
+    margin-bottom: 5px;
+    color: #007BFF;
+}
+
+h2 {
+    margin-top: 0;
+    color: #007BFF;
+}
+
+#stairsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#stairs {
+    position: relative;
+    width: 120px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 10px solid #007BFF;
+    border-right: 10px solid #007BFF;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.tread {
+    width: 100%;
+    height: 10px;
+    background-color: #007BFF; 
+}
+
+#stickPerson {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#climbStairsButton {
+    margin-top: 50px;
+}
+
+footer {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #007BFF;
+}
