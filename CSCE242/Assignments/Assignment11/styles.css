@@ -1,0 +1,201 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 36px;
+    color: #333;
+    margin: 0;
+}
+
+header h2 {
+    font-size: 24px;
+    color: #666;
+    margin: 10px 0 0;
+}
+
+#closeModal {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: 24px;
+    line-height: 1;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#closeModal:hover {
+    color: #000 !important;
+    background: none !important;
+    opacity: 1 !important;
+}
+
+.pizza-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.pizza-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: calc(50% - 20px);
+    max-width: 200px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    box-sizing: border-box;
+}
+
+.pizza-box:hover {
+    transform: scale(1.05);
+}
+
+.pizza-box h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+}
+
+.pizza-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.w3-modal {
+    display: none;
+    z-index: 9999;
+    padding-top: 100px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.w3-modal-content {
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 700px;
+    max-width: 700px;
+    background-color: #fff;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.w3-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.w3-button {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: none;
+}
+
+.w3-button:hover {
+    color: #000;
+    background-color: transparent;
+}
+
+.rotate-animation {
+    animation: rotate 2s linear;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.pizza-details {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.pizza-text {
+    flex: 1;
+    text-align: left;
+    padding-right: 20px;
+}
+
+.pizza-text h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.pizza-text p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.pizza-details img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    margin-left: 20px;
+    flex-shrink: 0;
+}
+
+
+@media (max-width: 768px) {
+    .w3-modal-content {
+        width: 90%;
+        max-width: 90%;
+        flex-direction: column;
+    }
+
+    .pizza-box {
+        width: calc(50% - 10px);
+    }
+
+    .pizza-details img {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .pizza-box {
+        width: 100%; 
+    }
+}
