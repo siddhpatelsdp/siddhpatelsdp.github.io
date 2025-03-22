@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trade Tracker - Trade History</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="../Images/TRADE TRACKER LOGO.jpg" alt="Trade Tracker Logo">
+                </a>
+            </div>            
+            <div class="large-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="add-trade.html">Add Trade</a></li>
+                    <li><a href="trade-history.html" class="active">Trade History</a></li>
+                    <li><a href="insights.html">Insights</a></li>
+                    <li><a href="contact.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="menu-bar small-menu">
+                <div class="toggle-menu">
+                    <span class="hamburger-icon">&#9776;</span>
+                </div>
+                <ul class="menu-items">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="add-trade.html">Add Trade</a></li>
+                    <li><a href="trade-history.html">Trade History</a></li>
+                    <li><a href="insights.html">Insights</a></li>
+                    <li><a href="contact.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="login-icon">
+                <img src="../Images/LOGIN ICON.jpg" alt="Login Icon">
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1>Your Trade History.</h1>
+        <p>View, filter, and analyze your past trades to refine your strategy.</p>
+
+        <div class="filters">
+            <label for="instrument-name">Enter Instrument Name:</label>
+            <input type="text" id="instrument-name" name="instrument-name" placeholder="e.g., NAS100">
+
+            <label for="date-range">Enter Date Range:</label>
+            <input type="date" id="start-date" name="start-date">
+            <span>to</span>
+            <input type="date" id="end-date" name="end-date">
+
+            <label for="filter-trades">Filter trades:</label>
+            <select id="filter-trades">
+                <option value="all">All Trades</option>
+                <option value="winning">Winning Trades Only</option>
+                <option value="losing">Losing Trades Only</option>
+            </select>
+
+            <label for="sort-trades">Sort trades by:</label>
+            <select id="sort-trades">
+                <option value="most-recent">Most Recent Trades</option>
+                <option value="oldest-first">Oldest First</option>
+                <option value="highest-profit">Highest Profit</option>
+                <option value="biggest-loss">Biggest Loss</option>
+                <option value="alphabetical">Alphabetical (Ticker Symbol)</option>
+            </select>
+        </div>
+
+        <table class="trade-table">
+            <thead>
+                <tr>
+                    <th>Instrument</th>
+                    <th>Entry Price</th>
+                    <th>Exit Price</th>
+                    <th>Date</th>
+                    <th>Profit/Loss</th>
+                    <th>Notes</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data will be dynamically inserted here by JavaScript -->
+            </tbody>
+        </table>
+
+        <div class="pagination">
+            <button class="prev-button">Previous</button>
+            <span class="page-info">1/10</span>
+            <button class="next-button">Next</button>
+        </div>
+
+        <section class="live-statistics">
+            <h2>Live Statistics</h2>
+            <table class="stats-table">
+                <!-- Data will be dynamically inserted here by JavaScript -->
+            </table>
+            <button class="export-button">Export Trade History (CSV)</button>
+        </section>
+    </main>
+    <footer>
+        <h3>Quick Links</h3>
+        <nav class="quick-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="add-trade.html">Add Trade</a></li>
+                <li><a href="trade-history.html" class="active">Trade History</a></li>
+                <li><a href="insights.html">Insights</a></li>
+                <li><a href="contact.html">About Us</a></li>
+            </ul>
+        </nav>
+        <p>© 2025 TradeTracker. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
