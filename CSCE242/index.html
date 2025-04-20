@@ -224,6 +224,20 @@
                 For this part of the project, I implemented a fully functional POST request using React on the frontend and Express on the backend. I built a form that allows users to submit new trade data, validated it both on the client and server sides using Joi, and ensured that all submitted data is accurately saved and displayed without formatting issues like timezone shifts. I also configured CORS, handled live deployment through GitHub Pages and Render, and ensured the data updates dynamically in the table after each submission.
             </p>
           </div>
+
+          <div class="assignment">
+            <h3>Part 11 - Edit & Delete Requests</h3>
+            <img src="../projects/Images/part8.jpg" alt="Screenshot of Edit & Delete Requests" width="300" height="150">
+            <p>
+              <a href="https://trade-tracker-api-n0dk.onrender.com/" target="_blank">Live Server (Render)</a><br>
+              <a href="https://github.com/siddhpatelsdp/trade_tracker_server" target="_blank">Server Code (GitHub)</a><br>
+              <a href="https://github.com/siddhpatelsdp/tradetrackerreact" target="_blank">Client Code (GitHub)</a><br>
+              <a href="https://siddhpatelsdp.github.io/tradetrackerreact/" target="_blank">Live Client Site</a>
+            </p>
+            <p class="description">
+                For this part of the project, I extended the Trade Tracker app to support full CRUD operations against my Express API: I implemented PUT and DELETE routes on the server (with Joi validation and string‑based IDs), wired up the React client’s Edit and Delete buttons in the Trade History table, and built an EditTrade form that fetches a single trade by its ID, lets the user update its fields, and submits via a PUT request. I also updated the AddTrade component to POST new trades, ensured all fetch calls correctly prefix /api/trades using a centralized API_URL, and adjusted my React build/deployment setup (proxy or absolute URLs) so that everything works seamlessly both locally and on GitHub Pages.
+            </p>
+          </div>
     </section>
 </body>
 </html>
