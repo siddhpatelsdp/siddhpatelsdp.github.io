@@ -238,6 +238,20 @@
                 For this part of the project, I extended the Trade Tracker app to support full CRUD operations against my Express API: I implemented PUT and DELETE routes on the server (with Joi validation and string‑based IDs), wired up the React client’s Edit and Delete buttons in the Trade History table, and built an EditTrade form that fetches a single trade by its ID, lets the user update its fields, and submits via a PUT request. I also updated the AddTrade component to POST new trades, ensured all fetch calls correctly prefix /api/trades using a centralized API_URL, and adjusted my React build/deployment setup (proxy or absolute URLs) so that everything works seamlessly both locally and on GitHub Pages.
             </p>
           </div>
+
+          <div class="assignment">
+            <h3>Part 12 - Server CRUD MondoDB</h3>
+            <img src="../projects/Images/part8.jpg" alt="Screenshot of Server CRUD MondoDB" width="300" height="150">
+            <p>
+              <a href="https://trade-tracker-api-n0dk.onrender.com/" target="_blank">Live Server (Render)</a><br>
+              <a href="https://github.com/siddhpatelsdp/trade_tracker_server" target="_blank">Server Code (GitHub)</a><br>
+              <a href="https://github.com/siddhpatelsdp/tradetrackerreact" target="_blank">Client Code (GitHub)</a><br>
+              <a href="https://siddhpatelsdp.github.io/tradetrackerreact/" target="_blank">Live Client Site</a>
+            </p>
+            <p class="description">
+                For this part of the project, I extended my React “Trade Tracker” app by implementing full CRUD capabilities and robust client-side filtering. On the front-end, I added Edit and Delete buttons to each trade row, built confirmation dialogs, wired up forms for updating trades (with proper date formatting and validation), and refined the date-range filters so that trades on the exact start and end dates are included. On the back-end, I swapped out the in-memory JSON store for a MongoDB Atlas database with a Mongoose schema, converted all API routes (GET, POST, PUT, DELETE) to interact with MongoDB, and ensured data persisted across deploys. Along the way I tackled timezone quirks by formatting dates in UTC and resolved deployment issues on Render by confirming HTTPS access to the production API.
+            </p>
+          </div>
     </section>
 </body>
 </html>
